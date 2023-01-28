@@ -1,0 +1,22 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+public class Main {
+
+    public static void main(String[] args) {
+        var a1 = new BigInteger("100000000000000000000");
+        var b1 = new BigInteger("200000000000000000000");
+        var a2 = new BigDecimal("123.100000000000000000001");
+        var b2 = new BigDecimal("123.200000000000000000002");
+        System.out.println(a1.add(b1));
+        System.out.println(a1.subtract(b1));
+        System.out.println(a1.multiply(b1));
+        System.out.println(a1.divide(b1));
+        System.out.println(a1.mod(b1));
+        System.out.println(a2.add(b2));
+        System.out.println(a2.subtract(b2));
+        System.out.println(a2.multiply(b2));
+        System.out.println(a2.divide(b2));
+        System.out.println(a2.remainder(b2));
+    }
+}
